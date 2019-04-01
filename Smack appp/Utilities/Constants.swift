@@ -9,3 +9,6 @@
 import Foundation
 
 let TO_LOGIN = "toLogin"
+let TO_CREATE_ACCOUNT = "ToCreateaccount"
+let TO_EXIT = "toexitsegue"
+

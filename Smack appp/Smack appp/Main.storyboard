@@ -296,6 +296,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="creataccbtn:" destination="2ms-To-2s8" eventType="touchUpInside" id="r51-ni-BnK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmk-hd-SgN">
                                 <rect key="frame" x="77" y="413.5" width="221" height="34"/>
@@ -305,6 +308,7 @@
                                 </state>
                                 <connections>
                                     <action selector="ToCreateBtnPressed:" destination="1Gg-DC-ifH" eventType="touchUpInside" id="BIp-gL-RRE"/>
+                                    <action selector="pickbcbgColor:" destination="2ms-To-2s8" eventType="touchUpInside" id="exw-Tu-2D8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyZ-j0-jia">
@@ -334,7 +338,7 @@
                                         <rect key="frame" x="0.0" y="41" width="250" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVk-j7-mSn">
                                         <rect key="frame" x="0.0" y="69" width="250" height="2"/>
@@ -378,6 +382,7 @@
                                 </state>
                                 <connections>
                                     <action selector="ToCreateBtnPressed:" destination="1Gg-DC-ifH" eventType="touchUpInside" id="FXj-PR-WyL"/>
+                                    <action selector="pickAvatarPressed:" destination="2ms-To-2s8" eventType="touchUpInside" id="KWP-7v-4mt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -403,6 +408,10 @@
                         <viewLayoutGuide key="safeArea" id="X34-rL-aW1"/>
                     </view>
                     <connections>
+                        <outlet property="emailtxt" destination="CaT-VI-JcI" id="HlU-eA-4bz"/>
+                        <outlet property="nametxt" destination="dyl-Qk-0dm" id="ixy-BN-Biv"/>
+                        <outlet property="passtxt" destination="DYj-Ux-jcJ" id="cdU-Bn-tJN"/>
+                        <outlet property="userimg" destination="UOU-Eh-dhD" id="GQY-P6-cUp"/>
                         <segue destination="eHY-Dp-mZ4" kind="unwind" identifier="toexitsegue" unwindAction="prepareForUnwindWithSegue:" id="d3c-Bz-ce6"/>
                     </connections>
                 </viewController>

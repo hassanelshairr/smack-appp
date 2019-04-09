@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2FD3AA9DDB33B6FFFFDB2A6B /* Pods_Smack_appp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1103FC8FD9CBCC62CC36CD65 /* Pods_Smack_appp.framework */; };
+		E48BC35B225CE78500D11A76 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48BC35A225CE78500D11A76 /* AuthService.swift */; };
 		E48D17BC22525E8400354BBC /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48D17BB22525E8400354BBC /* ChatVC.swift */; };
 		E48D17BE22525E9400354BBC /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48D17BD22525E9400354BBC /* ChannelVC.swift */; };
 		E48D17D82252693500354BBC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E48D17D62252693500354BBC /* SWRevealViewController.m */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		1103FC8FD9CBCC62CC36CD65 /* Pods_Smack_appp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack_appp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		926B2951D7E09AA8B22DFCA6 /* Pods-Smack appp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack appp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack appp/Pods-Smack appp.release.xcconfig"; sourceTree = "<group>"; };
+		E48BC35A225CE78500D11A76 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E48D17BB22525E8400354BBC /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		E48D17BD22525E9400354BBC /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		E48D17D52252693500354BBC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../../../../Smack/Smack/Smack/SupportingFiles/SWRevealViewController.h; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 				1103FC8FD9CBCC62CC36CD65 /* Pods_Smack_appp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E48BC359225CE75600D11A76 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E48BC35A225CE78500D11A76 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		E48D17B322525AAA00354BBC /* Supporting files */ = {
@@ -109,6 +119,7 @@
 		E49D2A982252404B00A7D5CA = {
 			isa = PBXGroup;
 			children = (
+				E48BC359225CE75600D11A76 /* Services */,
 				E48D17E22252784A00354BBC /* Utilities */,
 				E49D2AA32252404C00A7D5CA /* Smack appp */,
 				E49D2AA22252404C00A7D5CA /* Products */,
@@ -272,6 +283,7 @@
 				E48D17BE22525E9400354BBC /* ChannelVC.swift in Sources */,
 				E48D17BC22525E8400354BBC /* ChatVC.swift in Sources */,
 				E48D17E82252983A00354BBC /* CreateAccountVC.swift in Sources */,
+				E48BC35B225CE78500D11A76 /* AuthService.swift in Sources */,
 				E48D17E622528D6600354BBC /* LoginVC.swift in Sources */,
 				E48D17DF22526FF700354BBC /* GradientView.swift in Sources */,
 				E49D2AA52252404C00A7D5CA /* AppDelegate.swift in Sources */,
